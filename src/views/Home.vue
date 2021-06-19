@@ -1,5 +1,5 @@
 <template>
-    <AddTask v-show="showAddTask" @add-task="addTask" />
+  <AddTask v-show="showAddTask" @add-task="addTask" />
   <Tasks
     :tasks="tasks"
     @delete-task="deleteTask"
@@ -23,7 +23,7 @@ export default {
     };
   },
   props: {
-      showAddTask: Boolean,
+    showAddTask: Boolean,
   },
   methods: {
     async addTask(task) {

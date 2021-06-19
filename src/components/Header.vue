@@ -23,14 +23,13 @@ export default {
   },
   computed: {
     homePage() {
-      if(this.$route.path === '/') {
-        return true
+      if (this.$route.path === "/") {
+        return true;
+      } else {
+        return false;
       }
-      else {
-        return false
-      }
-    }
-  }
+    },
+  },
 };
 </script>
 
